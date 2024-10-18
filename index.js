@@ -12,7 +12,8 @@ app.get("/",function (req,res)  {
 })
 
 app.get("/route-handler",function (req,res) {
-    //headers,body,query parameters 
+    //headers,body,query parameters
+    // We can capture request parmeters using req,res objects
     res.json({
         name:"Surya",
         age:21
