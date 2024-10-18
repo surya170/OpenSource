@@ -49,7 +49,7 @@ let cat = new Animal("cat",4,"meow meow");
 cat.speak(); // Call Function on object
 dog.speak();
 
-// Date 
+// Date Class
 const currentDate = new Date();
 
 console.log(currentDate)
