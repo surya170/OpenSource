@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express(); 
 const bodyParser = require("body-parser")
-
 //middleware
 app.use(bodyParser.json())
 const port = process.env.PORT || 3000;
@@ -13,6 +12,7 @@ app.get("/",function (req,res)  {
 
 app.get("/route-handler",function (req,res) {
     //headers,body,query parameters 
+    // do machine learning model code here
     res.json({
         name:"Surya",
         age:21
