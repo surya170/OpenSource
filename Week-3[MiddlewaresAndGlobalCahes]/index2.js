@@ -1,5 +1,6 @@
 const zod = require("zod")
 
+// Define the schema for the input object
 function validateInput(obj){
     const schema = zod.object({
         email:zod.string().email(),
@@ -14,3 +15,5 @@ validateInput({
     email:"abc@xyz.com",
     password: "12324244"  
 })
+
+
