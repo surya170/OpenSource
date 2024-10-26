@@ -12,3 +12,4 @@ services:
     image: redis:latest
     ports:
          - 6379:6379
+# Docker-compose is a tool for defining and running multi-container Docker applications.
