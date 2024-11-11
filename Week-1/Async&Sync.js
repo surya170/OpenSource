@@ -51,3 +51,4 @@ function syncSleep(){
 syncSleep();  // These function make the code as sync functionality 
 findSumTill100();
 console.log("Hello World");
+
