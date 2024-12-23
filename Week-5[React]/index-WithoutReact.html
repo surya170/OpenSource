@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="buttonParent">
+        </div>
+        <script>
+            let state  = {
+                count : 0
+            }
+
+            function onButtonPress() {
+                state.count++;
+                buttonComponentRender()
+            }
+
+            // For every time the state is changing for every change the below function is calling but in react react takes care of it for every state change.
+            function buttonComponentRender() {
+                document.getElementById(`buttonParent`).innerHTML = "";
+                const component = buttonComponent(state.count);
+                console.log(component);
+                document.getElementById('buttonParent').appendChild(component);
+            }
+
+            function buttonComponent(count) {
+                const button = document.createElement("button");
+                button.innerHTML = `Counter ${count}`;
+                button.setAttribute("onClick","onButtonPress()");
+                return button;
+            }
+            buttonComponentRender();
+        </script>
+    </body>
+</html>
